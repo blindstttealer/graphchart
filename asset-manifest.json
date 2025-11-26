@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/graphchart/static/css/main.016c4418.css",
+    "main.js": "/graphchart/static/js/main.35045d24.js",
+    "index.html": "/graphchart/index.html",
+    "main.016c4418.css.map": "/graphchart/static/css/main.016c4418.css.map",
+    "main.35045d24.js.map": "/graphchart/static/js/main.35045d24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.016c4418.css",
+    "static/js/main.35045d24.js"
+  ]
+}
