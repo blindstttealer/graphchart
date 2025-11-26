@@ -1,0 +1,99 @@
+.customTooltip {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  max-width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.tooltipHeader {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.tooltipDate {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.tooltipSubtitle {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.tooltipList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tooltipItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.tooltipVariation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+}
+
+.tooltipColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.tooltipValue {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dark .customTooltip {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #fff;
+}
+
+.dark .tooltipHeader {
+  border-bottom-color: #444;
+}
+
+.dark .tooltipDate,
+.dark .tooltipVariation,
+.dark .tooltipValue {
+  color: #fff;
+}
+
+.dark .tooltipSubtitle {
+  color: #ccc;
+}
+
+.customTooltip {
+  animation: tooltipFadeIn 0.2s ease-out;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

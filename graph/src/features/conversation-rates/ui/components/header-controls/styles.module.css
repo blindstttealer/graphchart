@@ -1,0 +1,167 @@
+.headerControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+
+.dark {
+  background: #2d2d2d;
+  border-color: #444;
+}
+
+.leftControls {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  min-width: 0;
+}
+
+.rightControls {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.controlGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.variationSelect {
+  min-width: 180px;
+  max-width: 250px;
+}
+
+.timeRangeSelect {
+  min-width: 120px;
+  max-width: 150px;
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  white-space: nowrap;
+}
+
+.themeLabel {
+  font-size: 16px;
+}
+
+.advancedControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.zoomControls {
+  display: flex;
+  gap: 4px;
+}
+
+.zoomButton {
+  min-width: 36px;
+  padding: 0 8px;
+}
+
+.zoomButton.active {
+  background-color: #007AFF;
+  color: white;
+}
+
+.exportButton {
+  min-width: 80px;
+  white-space: nowrap;
+}
+
+.zoomButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .headerControls {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .leftControls, .rightControls {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .rightControls {
+    justify-content: space-between;
+  }
+  
+  .controlGroup {
+    flex: 0 1 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerControls {
+    padding: 16px;
+    gap: 12px;
+  }
+  
+  .leftControls, .rightControls {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .advancedControls {
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .variationSelect {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  .timeRangeSelect {
+    min-width: 140px;
+  }
+  
+  .controlGroup {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerControls {
+    padding: 12px;
+  }
+  
+  .advancedControls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .zoomControls {
+    justify-content: center;
+  }
+  
+  .exportButton {
+    width: 100%;
+  }
+}

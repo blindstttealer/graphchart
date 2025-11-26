@@ -1,0 +1,292 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.appHeader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.appHeader h1 {
+  color: #333;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.variationControls, .timeControls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.variationControls h3, .timeControls h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkboxLabel, .radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.checkboxLabel:hover, .radioLabel:hover {
+  color: #333;
+}
+
+.checkbox, .radio {
+  margin: 0;
+  cursor: pointer;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #d32f2f;
+  background-color: #ffebee;
+  border-radius: 8px;
+  border: 1px solid #ffcdd2;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .controls {
+    flex-direction: column;
+  }
+  
+  .checkboxGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .appHeader h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+  .app {
+    padding: 15px;
+  }
+}
+
+.headerControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.dark .headerControls {
+  background: #2d2d2d;
+  border-color: #444;
+}
+
+.leftControls {
+  display: flex;
+  gap: 32px;
+  flex: 2;
+  min-width: 400px;
+}
+
+.rightControls {
+  display: flex;
+  gap: 32px;
+  flex: 1;
+  min-width: 300px;
+  justify-content: flex-end;
+}
+
+.controlGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 140px;
+}
+
+.controlLabel {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.dark .controlLabel {
+  color: #ffffff;
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+}
+
+.themeLabel {
+  font-size: 16px;
+}
+
+.advancedControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.zoomControls {
+  display: flex;
+  gap: 4px;
+}
+
+@media (max-width: 1024px) {
+  .headerControls {
+    flex-direction: column;
+  }
+  
+  .leftControls, .rightControls {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .rightControls {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftControls, .rightControls {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .advancedControls {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+
+
+.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+
+
+.dark .controls,
+.dark .headerControls {
+  background: #2d2d2d;
+  border-color: #444;
+}
+
+.dark .controlLabel {
+  color: #ffffff;
+}
+
+.advancedControls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.zoomControls {
+  display: flex;
+  gap: 8px;
+}
+
+.zoomButton.active {
+  background-color: #007AFF !important;
+  color: white !important;
+}
+
+.exportButton {
+  min-width: 40px !important;
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.themeLabel {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .headerControls {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .advancedControls {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.zoomButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
