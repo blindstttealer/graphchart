@@ -4,8 +4,7 @@
 
 ## 🚀 Live Demo
 
-[Ссылка на GitHub Pages](https://yourusername.github.io/graphchart)
-
+[Ссылка на GitHub Pages](https://blindstttealer.github.io/graphchart)
 ## 📊 Функциональность
 
 ### Реализованные функции
@@ -34,4 +33,4 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourusername/graphchart.git
+git clone https://github.com/blindstttealer/graphchart.git
